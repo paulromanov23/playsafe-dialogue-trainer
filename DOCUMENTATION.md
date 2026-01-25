@@ -48,6 +48,24 @@ All data is fictional or generalised to avoid sensitive personal information.
 
 ## Architecture
 
+- LLM: Local Ollama-compatible chat model  
+- RAG: Custom vector-based index for help documents
+- Embeddings: Precomputed once using Ollama-compatible model and cached until changes in the source files has been made
+- UI: Streamlit chat interface
+
+The structure of the repository is as follows:
+.
+├── gui.py                     # Streamlit chat interface
+├── **app.py**                 # Core dialogue logic (3-stage trainer)
+├── config.py                  # Trainer configuration and paths
+├── prompt.py                  # System prompt for the LLM
+├── rag_index.py               # RAG index (loading/saving)
+├── rag_utils.py               # Ollama API helpers
+├── scenario_preprocessing.py  # Scenario loading and splitting logic
+├── data.zip                   # Scenarios + help documents
+├── requirements.txt           # Python dependencies
+└── DOCUMENTATION.md           # Project documentations
+
 ## Installation
 
 Create a virtual environment (recommended), then install dependencies:
