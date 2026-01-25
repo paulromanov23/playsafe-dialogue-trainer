@@ -54,9 +54,10 @@ All data is fictional or generalised to avoid sensitive personal information.
 - UI: Streamlit chat interface
 
 The structure of the repository is as follows:
+```text
 .
 ├── gui.py                     # Streamlit chat interface
-├── **app.py**                 # Core dialogue logic (3-stage trainer)
+├── app.py ⭐                 # Core dialogue logic (3-stage trainer)
 ├── config.py                  # Trainer configuration and paths
 ├── prompt.py                  # System prompt for the LLM
 ├── rag_index.py               # RAG index (loading/saving)
@@ -65,7 +66,7 @@ The structure of the repository is as follows:
 ├── data.zip                   # Scenarios + help documents
 ├── requirements.txt           # Python dependencies
 └── DOCUMENTATION.md           # Project documentations
-
+```
 ## Installation
 
 Create a virtual environment (recommended), then install dependencies:
