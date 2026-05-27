@@ -2,7 +2,13 @@
 
 PlaySAFE is a dialogue-based training system designed to help safeguarding officers (vertrouwenscontactpersonen) in Dutch sports clubs practice neutral, emotionally aware, and procedurally correct conversations in sensitive situations.
 
-Unlike conventional RAG systems focused on fact retrieval or summarisation, PlaySAFE uses Retrieval-Augmented Generation to support reflective practice, scenario-based learning, and feedback on conversational skills.
+**Why it's interesting technically:** RAG is typically used for Q&A. 
+This project uses it to support reflective practice — retrieving 
+pedagogical guidance dynamically to generate contextualised feedback 
+on how a user responded to a sensitive scenario. Runs fully locally 
+via Ollama with precomputed embeddings cached until source files change.
+
+**Tech stack:** Python · Streamlit · Ollama · Custom RAG index · LangChain-style pipeline
 
 ## Project Overview
 
